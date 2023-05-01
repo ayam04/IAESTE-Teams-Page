@@ -1,0 +1,520 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IAESTE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="ab.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <section class="carousel-outer-container">
+    <div id="myCarousel" class="carousel slide carousel-container" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="Los Angeles">
+        </div>
+    
+        <div class="item">
+          <img src="https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg" alt="Chicago">
+        </div>
+    
+        <div class="item">
+          <img src="https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989__480.jpg" alt="New York">
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+<div class="responsive-container-block outer-container">
+    <div class="responsive-container-block inner-container">
+      <p class="text-blk heading-text">Senior Board</p>
+      <div class="responsive-container-block cards-container">
+        <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-mobile-12 wk-tab-12 card-container">
+          <p class="text-blk name">Ayush Karle</p>
+          <p class="text-blk position">General Secretary</p>
+          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors1.svg">
+          
+          <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+        </div>
+        <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-mobile-12 wk-tab-12 card-container">
+          <p class="text-blk name">Kushagra Dhingra </p>
+          <p class="text-blk position">President</p>
+          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors2.svg">
+          
+          <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+        </div>
+        <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-mobile-12 wk-tab-12 card-container">
+          <p class="text-blk name">Kashish Rathore</p>
+          <p class="text-blk position">BDPR </p>
+          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors3.svg">
+         
+          <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar cent" role="navigation" aria-label="main navigation">  
+    <div id="navbarBasicExample" class="navbar-menu cent">
+      <div class="navbar-start cent">
+        <a class="navbar-item" onclick="GetHeads('Administration')">Administration  </a>
+        <a class="navbar-item" onclick="GetHeads('Corporate')">Corporate  </a>
+        <a class="navbar-item" onclick="GetHeads('Outgoing Exchange')">Outgoing Exchange  </a>
+        <a class="navbar-item" onclick="GetHeads('Incoming Exchange')">Incoming Exchange </a>
+        <a class="navbar-item" onclick="GetHeads('HR')">HR  </a>
+        <a class="navbar-item" onclick="GetHeads('ITDA')">ITDA  </a>
+        <a class="navbar-item" onclick="GetHeads('Finance')">Finance  </a>
+        <a class="navbar-item" onclick="GetHeads('PR')">PR  </a>
+        <a class="navbar-item" onclick="GetHeads('Design and Media')">Design and Media  </a>
+      </div>
+    </div>
+</nav>   
+<div class="responsive-container-block container">
+    <p class="text-blk team-head-text">Junior Board </p>
+    <div id="selected-department">
+      <p id="department-name" class="text-blk team-head-text"></p>
+      <div id="department-heads"></div>
+    </div>
+    <div id="all-heads" class="responsive-container-block">
+      <div class="Administration responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Pranay Dalmia
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="Administration responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Priyal Jain
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="Corporate responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Ipsitaa Sahoo
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="Corporate DesignandMedia responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Pratik Patil
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="DesignandMedia responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Nupur Mehlawat
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="OutgoingExchange responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Ananya Adlakha
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="OutgoingExchange responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Manya Jain
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="IncomingExchange responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Aditya Patil
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="IncomingExchange responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Yahya Aseerullah
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="HR responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Rishabh Rao
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="HR responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png">
+          </div>
+          <p class="text-blk name">
+            Manya Khater
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="ITDA responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+          </div>
+          <p class="text-blk name">
+            Devansh Mathur
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="ITDA responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
+          </div>
+          <p class="text-blk name">
+            Megha Bhawnani
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="Finance responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png">
+          </div>
+          <p class="text-blk name">
+            Mariyush Gupta
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="Finance responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+          </div>
+          <p class="text-blk name">
+            Vedant Nemade
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="PR responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
+          </div>
+          <p class="text-blk name">
+            Ananya Bhardwaj
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="PR responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Radhika Sharma
+          </p>
+          <p class="text-blk position">
+            Head
+          </p>
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+              <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row" style="display:flex;justify-content:space-evenly;">
+        <div class="col-xs-8 col-md-4">
+          <h6><b>About IAESTE</b></h6>
+          <ul class="footer-links">
+            <li><a href="https://iaeste.org/history">History of IAESTE</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="https://iaeste.org/organisation-structure">Organization Structure</a></li>
+            <li><a href="https://iaeste.org/annual-conferences">Annual Conferences</a></li>
+            <li><a href="https://iaeste.org/student-nonmembers">Non-Member Countries</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6><b>Students</b></h6>
+          <ul class="footer-links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="https://iaeste-ff273.firebaseapp.com/login">Explore Internships</a></li>
+            <li><a href="file:///C:/Users/Ayaam/Desktop/iaeste/ITDA/IAESTE_frontend-master/Testimonial/HTML/testimonials.html">Testimonials</a></li>
+            <li><a href="#">Feedback and Complaints</a></li>
+            <li><a href="#">Website Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row" style="display:flex; justify-content:space-evenly;">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+       <a href="https://www.iaestemuj.in/">IAESTE MUJ</a>.
+          </p>
+        </div>
+        
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="social-icons">
+            <a href="https://www.gmail.com" target="_blank">
+              <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+            </a>
+            <a href="https://www.instagram.com/iaeste.muj/" target="_blank">
+              <img class="social-media-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </footer>
+</body>
+</html>
